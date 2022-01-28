@@ -59,19 +59,19 @@ public class convert{
         cval = dval * 0.24;
         System.out.println(dval + " cups is equal to " + cval + " L");
       }else if (val2.toLowerCase().equals("c")) {
-        cval = (dval * (9 / 5)) + 32;
+        cval = (dval * 1.8) + 32;
         System.out.println(dval + " C is equal to " + cval + " F");
         cval = dval + 273.15;
         System.out.println(dval + " C is equal to " + cval + " K");
       }else if (val2.toLowerCase().equals("f")) {
-        cval = (dval - 32) * (5 / 9);
+        cval = (dval - 32) * 0.56;
         System.out.println(dval + " F is equal to " + cval + " C");
-        cval = (dval - 32) * (5 / 9) + 273.15;
+        cval = (dval - 32) * 0.56 + 273.15;
         System.out.println(dval + " F is equal to " + cval + " K");
       }else if (val2.toLowerCase().equals("k")) {
         cval = dval - 273.15;
         System.out.println(dval + " K is equal to " + cval + " C");
-        cval = (dval - 273.32) * (9 / 5) + 32;
+        cval = (dval - 273.15) * 1.8 + 32;
         System.out.println(dval + " K is equal to " + cval + " F");
       }else{
         System.out.println("Invalid unit");
