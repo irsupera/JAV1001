@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Text label for Teams A & B -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textv_team1"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:text="Team A"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <TextView
+                    android:id="@+id/textv_team2"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            </TableRow>
+
+            <!-- Text scores for Teams A & B -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textv_score1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+                <TextView
+                    android:id="@+id/textv_score2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+            </TableRow>
+
+            <!-- Plus points buttons for Teams A & B -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_p1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <Button
+                    android:id="@+id/button_p2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </TableRow>
+
+            <!-- Minus points buttons for Teams A & B -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_m1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <Button
+                    android:id="@+id/button_m2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </TableRow>
+
+        </TableLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Select option/button for game/sport -->
+            <RadioButton
+                android:id="@+id/radiob_fb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Football" />
+
+            <RadioButton
+                android:id="@+id/radiob_bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basketball" />
+        </RadioGroup>
+
+        <!-- Dropdown for the points/scores -->
+        <Spinner
+            android:id="@+id/spinner_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
