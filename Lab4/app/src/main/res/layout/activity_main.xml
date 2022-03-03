@@ -117,6 +117,14 @@
         <!-- </RadioGroup> -->
 
         <!-- Dropdown for the points/scores -->
+
+        <TextView
+            android:id="@+id/textv_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point/s:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
         <Spinner
             android:id="@+id/spinner_points"
             android:layout_width="match_parent"

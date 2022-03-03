@@ -1,3 +1,7 @@
+//JAV-1001 - Lab 4-5
+//Iricher B Supera
+//A00237146
+//MAPD0101
 package com.irsupera.lab4;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -5,7 +9,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spin_pnts.setAdapter(adapter);
 
-        //set on click listener for team A plus button
+        //set onclick listener for team A plus button
         button_p1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //get current team score and selected points
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //set on click listener for team B plus button
+        //set onclick listener for team B plus button
         button_p2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //get current team score and selected points
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //set on click listener for team A minus button
+        //set onclick listener for team A minus button
         button_m1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //get current team score and selected points
@@ -80,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //set on click listener for team B minus button
+        //set onclick listener for team B minus button
         button_m2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //get current team score and selected points
