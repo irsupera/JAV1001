@@ -61,14 +61,14 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_p1"
+                    android:id="@+id/button_add1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <Button
-                    android:id="@+id/button_p2"
+                    android:id="@+id/button_add2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+"
@@ -81,14 +81,14 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button_m1"
+                    android:id="@+id/button_sub1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <Button
-                    android:id="@+id/button_m2"
+                    android:id="@+id/button_sub2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-"
@@ -97,11 +97,12 @@
 
         </TableLayout>
 
-        <RadioGroup
+        <!-- <RadioGroup
+            android:id="@+id/radiog_game"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"> -->
 
-            <!-- Select option/button for game/sport -->
+            <!-- Select option/button for game/sport
             <RadioButton
                 android:id="@+id/radiob_fb"
                 android:layout_width="match_parent"
@@ -112,8 +113,8 @@
                 android:id="@+id/radiob_bb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Basketball" />
-        </RadioGroup>
+                android:text="Basketball" /> -->
+        <!-- </RadioGroup> -->
 
         <!-- Dropdown for the points/scores -->
         <Spinner
