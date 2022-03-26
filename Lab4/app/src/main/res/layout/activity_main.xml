@@ -8,8 +8,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -18,12 +20,14 @@
             <!-- Text label for Teams A & B -->
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/gray">
 
                 <TextView
                     android:id="@+id/textv_team1"
                     android:layout_width="205dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Team A"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
@@ -31,6 +35,7 @@
                     android:id="@+id/textv_team2"
                     android:layout_width="205dp"
                     android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Team B"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
             </TableRow>
@@ -44,6 +49,7 @@
                     android:id="@+id/textv_score1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
                     android:text="0"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
@@ -51,6 +57,7 @@
                     android:id="@+id/textv_score2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
                     android:text="0"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
             </TableRow>
@@ -64,15 +71,21 @@
                     android:id="@+id/button_add1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
                     android:text="+"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:strokeColor="@color/gray"
+                    app:strokeWidth="1dp" />
 
                 <Button
                     android:id="@+id/button_add2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
                     android:text="+"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:strokeColor="@color/gray"
+                    app:strokeWidth="1dp" />
             </TableRow>
 
             <!-- Minus points buttons for Teams A & B -->
@@ -85,14 +98,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:strokeColor="@color/gray"
+                    app:strokeWidth="1dp" />
 
                 <Button
                     android:id="@+id/button_sub2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="-"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:strokeColor="@color/gray"
+                    app:strokeWidth="1dp" />
             </TableRow>
 
         </TableLayout>
@@ -102,7 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"> -->
 
-            <!-- Select option/button for game/sport
+        <!-- Select option/button for game/sport
             <RadioButton
                 android:id="@+id/radiob_fb"
                 android:layout_width="match_parent"
@@ -122,14 +139,16 @@
             android:id="@+id/textv_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/gray"
             android:text="Point/s:"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Spinner
             android:id="@+id/spinner_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
